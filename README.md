@@ -1,22 +1,24 @@
-# ad-hacs
+# coffeeminder
 
-_Sample AppDaemon app for [HACS](https://github.com/custom-components/hacs)._
+_Automatic shut-off and probably other coffeemaker niceties for homeassistant._
 
 ## Installation
 
-Download the `hacs` directory from inside the `apps` directory here to your local `apps` directory, then add the configuration to enable the `hacs` module.
+Download the `coffeeminder` directory from inside the `apps` directory here to your local `apps` directory, then add the configuration to enable the `coffeeminder` module.  
+Or add as a repository in hacs if.
 
 ## App configuration
 
 ```yaml
-hacs:
-  module: hacs
-  class: Hacs
-  hacs_sensor: sensor.hacs
+coffeeminder:
+  module: coffeeminder
+  class: Coffeeminder
+  constrain_input_boolean: input_boolean.coffeeminder
+  coffee_switch: switch.coffee_maker_on_off
+  # uses input_number.coffeeminder_minutes in homeassistant.
 ```
 
 key | optional | type | default | description
 -- | -- | -- | -- | --
 `module` | False | string | | The module name of the app.
 `class` | False | string | | The name of the Class.
-`hacs_sensor` | True | string | `sensor.hacs`| The entity_id of the HACS sensor.
