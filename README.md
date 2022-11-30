@@ -5,7 +5,7 @@ _Automatic shut-off and probably other coffeemaker niceties for homeassistant._
 ## Installation
 
 Download the `coffeeminder` directory from inside the `apps` directory here to your local `apps` directory, then add the configuration to enable the `coffeeminder` module.  
-Or add as a repository in hacs if.
+Or add as a repository in hacs if I've gotten around to try to get it in default repo set.
 
 ## App configuration
 
